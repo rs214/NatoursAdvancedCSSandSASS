@@ -1,0 +1,22 @@
+{
+  "name": "natours",
+  "version": "1.0.0",
+  "description": "A course on advanced CSS and SASS from a course on Udemy",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss starter/css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rs214/NatoursAdvancedCSSandSASS.git"
+  },
+  "author": "Robert",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rs214/NatoursAdvancedCSSandSASS/issues"
+  },
+  "homepage": "https://github.com/rs214/NatoursAdvancedCSSandSASS#readme",
+  "devDependencies": {
+    "node-sass": "^4.7.2"
+  }
+}
