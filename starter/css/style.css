@@ -132,8 +132,8 @@ body {
   margin-top: -10rem; }
 
 .section-stories {
-  padding: 15rem 0;
-  background-color: #f7f7f7; }
+  position: relative;
+  padding: 15rem 0; }
 
 .btn--white {
   background-color: #fff;
@@ -202,6 +202,20 @@ body {
 .btn-text:active {
   transform: translateY(0);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); }
+
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: .15;
+  overflow: hidden; }
+  .bg-video__content {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; }
 
 .composition {
   position: relative; }
@@ -365,7 +379,8 @@ body {
   .story__img {
     height: 100%;
     transform: translateX(-4rem) scale(1.4);
-    transition: all .5s; }
+    transition: all .5s;
+    backface-visibility: hidden; }
   .story__text {
     transform: skewX(12deg); }
   .story__caption {
